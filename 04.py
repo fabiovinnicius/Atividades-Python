@@ -1,0 +1,7 @@
+z= input('Digite qualquer coisa: ')
+print(z,'▏É do tipo primitivo ', type(z))
+print(z,'▏Possui apenas numeros? ', z.isnumeric(),)
+print(z,'▏Possui apenas letras? ',z.isalpha(),)
+print(z,'▏Possui letra ou numero? ',z.isalnum())
+print(z,'▏Possui apenas letras maiúsculas? ', z.isupper())
+print(z,'▏Possui apenas letras minúsculas? ', z.islower())
