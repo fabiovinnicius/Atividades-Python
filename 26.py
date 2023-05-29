@@ -1,0 +1,5 @@
+variavel = str(input('Digite algo...:'))
+variavel = variavel.strip()
+print('Dentro de {}, a letra  A  aparece {} vezes.'.format(variavel, variavel.lower().count('a')))
+print('a letra  A  aparece primeiro na posição {}.'.format(variavel.lower().index('a')))
+print('a letra  A  aparece por ultimo na posição {}.'.format(variavel.lower().rindex('a')))
