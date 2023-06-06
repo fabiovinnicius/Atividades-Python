@@ -156,10 +156,16 @@
 
 -~-~-~-~-~-~-~-~- Condições -~-~-~-~-~-~-~-~-
 
-if -----------> condição primaria que indica uma objeção no código. ----------------- if n2 > 8: print('o numero é maior que oito')
+if -----------> condição primaria que indica uma objeção no código. ----------------- if n2 > 8: print('o numero é maior que oito').
+o uso de somente a condição 'if' é chamada de estrutura condicional simples, pois está sendo usado apenas uma condição em especifico.
 
 else -----------> condição secudária que é executada caso as informações não satisfaçam a primeira. if n2 > 8: print('o número é maior que oito')
 else: print('o número é menor que oito')
+o uso de 'if' mais 'else' é chamada de estrutura condicional comsposta, pois está sendo usado duas condições no código (se e senão). 
+
+elif -----------> pode-se criar quantas condições forem necessárias desde que o código possua um if ao começo e else no final.
+Ex: elif nome == 'Pedro' or nome == 'Maria' or nome == 'Paulo':
+  print('Seu nome é bem popular no Brasil.')
 
 -~-~-~-~-~-~-~-~- Cores no terminal -~-~-~-~-~-~-~-~-
 
@@ -245,4 +251,3 @@ text              │   background
 36      cyan      │   ciano    46
 37      grey      │   cinza    47                  
 97      white     │   branco   107
-
