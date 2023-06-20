@@ -1,23 +1,16 @@
-print('\033[1;0;35m {:=^40}'.format('LOJALES'))
-preço = float(input('Preço das compras: R$'))
-print('''FORMAS DE PAGAMENTOS
-[1] à vista dinheiro/cheque
-[2] à vista cartão
-[3] 2x no cartão
-[4] 3x ou mais no cartão''')
-op= int(input('Qual é a opção? '))
-if op == 1:
-    total = preço - (preço * 10 / 100)
-if op == 2:
-    total = preço - (preço * 5 / 100)
-print('Sua compra de R${:.2f} vai custar R${:.2f} no final.'.format(preço, total))
-if op == 3:
-total = preço
-parcela = total / 2
-print('Sua compra será parcelada em 2x de R${:.2f}'.format(parcela))
-if op == 4:
-total = preço + (preço * 20 / 100)
-totparc = int(input('Quantas parcelas?'))
-    print('Sua compra será parcelada em {}x de R${:.2f}'.format(totparc, parcela))
-else: total = 0
-print('\033[1;0;41mOPÇÃO INVÁLIDA de pagamento. Tente novamente.')
+p=float(input('Qual o preço do produto? '))
+fp=int(input("""Qual a forma de pagamento?
+Digite 1 para A vista ou cheque
+Digite 2 para A vista no cartao
+Digite 3 para parcelar no cartao
+Opção escolhida: """))
+if fp==1:
+    print('Voce deverá pagar {}R$'.format(p-(p*0.10)))
+elif fp==2:
+    print('Voce deverá pagar {}R$'.format(p-(p*0.05)))
+elif fp==3:
+    np=int(input('Quantas vezes deseja parcelar?'))
+    if np<=2:
+        print('Voce pagará {}R$ e cada parcela ficará em {}R$'.format(p, p/np))
+    elif np>=3:
+        print('Voce pagará {}R$ em {} parcelas e o valor de cada parcela ficará em {}R$'.format(p+(p*0.20), np, p*1.20/np))
