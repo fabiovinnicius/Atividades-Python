@@ -1,2 +1,2 @@
-for cont in range (0, 50, +2):
+for cont in range (2, 50, +2):
     print(cont)
